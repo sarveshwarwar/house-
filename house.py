@@ -1,5 +1,7 @@
 import streamlit as st # type: ignore
-import matplotlib.pyplot as plt # type: ignore
+import matplotlib
+matplotlib.use('Agg')  # Use a non-GUI backend
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
